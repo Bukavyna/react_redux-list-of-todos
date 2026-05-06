@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
@@ -50,6 +49,7 @@ export const TodoList: React.FC = () => {
         <tbody>
           {visibleTodos.map(todo => {
             const isSelected = currentTodo?.id === todo.id;
+
             return (
               <tr
                 key={todo.id}
